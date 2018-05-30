@@ -9,13 +9,7 @@ default_file = ""
 
 
 def greibach(grammar: Grammar):
-    """
-
-	:param grammar:
-	:return:
-	:rtype: Grammar
-	"""
-    return None
+    return grammar
 
 
 def main(argv):
@@ -36,7 +30,7 @@ def main(argv):
     start_symbol = lines[-1:][0]
     grammar = Grammar(non_terminals, terminals, rules, start_symbol)
     gr_grammar = greibach(grammar)
-    # gr_grammar.save('./data/output/')
+    gr_grammar.save('./data/output/example.txt')
 
 
 if __name__ == '__main__':
